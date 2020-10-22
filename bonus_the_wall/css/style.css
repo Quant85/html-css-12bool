@@ -1,0 +1,61 @@
+/* font integrati */
+@font-face {
+  font-family: 'Floydian';
+  src: url('./font/Floydian.woff2') format('woff2'),
+    url('./font/Floydian.woff') format('woff'),
+    url('./font/Floydian.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CCShoutOutW00';
+  src: url('./font/CCShoutOutW00-Bold.woff2') format('woff2'),
+    url('./font/CCShoutOutW00-Bold.woff') format('woff'),
+    url('./font/CCShoutOutW00-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body [class*="col_"] {
+  height: calc(100vh / 15);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(214, 214, 214, 0.6) 100%);
+  border: 1px inset #6b6a6a;
+  border-radius: 2px;
+  
+}
+
+body [class*="col_"]:nth-child(even) {
+  border: 1px double #b3b2b2;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px black, -2px -2px 2px black;
+}
+
+.container{
+  position: relative;
+}
+
+.row:nth-child(even){
+  margin-left: 50px;
+}
+div.text{
+  height: auto;
+  width: 25%;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  color: #ce0509;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: CCShoutOutW00;
+  font-size: 8em;
+  text-shadow: 0 10px 5px black;
+}
