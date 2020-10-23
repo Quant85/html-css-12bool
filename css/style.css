@@ -6,11 +6,13 @@ body [class*="col_"] {
   background-color: pink;
   border: 1px solid #000000;
 }
+.row{
+  height: 100%;
+}
 body [class*="nested"] {
   height: 100%;
   background-color: #f07f80;
   border: 1px solid #ffffff;
-  padding: 15px;
 }
 h4{
   font-size: 1.2em;
